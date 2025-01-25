@@ -205,10 +205,64 @@ function BattleStateVictoryCheck()
 {
 	if (units[0].hp <= 0)
 	{
-
-		battleText = "You won";
-		instance_destroy();
-		instance_activate_all();
+		if (units[0].name = "Rat")
+		{
+			global.party[0].ratPotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+		else if (units[0].name = "Wolf")
+		{
+			global.party[0].wolfPotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+		else if (units[0].name = "Spider")
+		{
+			global.party[0].spiderPotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+		else if (units[0].name = "Ooze")
+		{
+			global.party[0].oozePotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+		else if (units[0].name = "Snake")
+		{
+			global.party[0].snakePotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+		else if (units[0].name = "Cat")
+		{
+			global.party[0].catPotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+		else if (units[0].name = "Human")
+		{
+			global.party[0].humanPotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+		else if (units[0].name = "Fly")
+		{
+			global.party[0].flyPotion = +1;
+			battleText = "You won";
+			instance_destroy();
+			instance_activate_all();
+		}
+			
+		
 		//exit;
 
 	}

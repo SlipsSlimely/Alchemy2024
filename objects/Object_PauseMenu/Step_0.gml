@@ -48,93 +48,100 @@ var _sml = menu_level;
 
 			//Wolf Potion
 			case 0:
-				if (global.party[0].wolf < 3 && global.party[0].combined < 3)
-				{
-					global.party[0].wolf++;
-					global.party[0].combined++;
-					if (global.party[0].wolf == 1 && global.party[0].combined == 1)
+			if (global.party[0].wolfPotion > 0)
+			{
+				global.party[0].wolfPotion--;
+					if (global.party[0].wolf < 3 && global.party[0].combined < 3)
 					{
-						global.party[0].sprites.idle = sWolf1;
-						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
+						global.party[0].wolf++;
+						global.party[0].combined++;
+						if (global.party[0].wolf == 1 && global.party[0].combined == 1)
+						{
+							global.party[0].sprites.idle = sWolf1;
+							global.party[0].attack++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
 						
-					}
-					else if (global.party[0].wolf == 2 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf2;
-						global.party[0].attack++;
-					}
-					else if (global.party[0].wolf == 1 && global.party[0].spider == 1 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf1Spider1;
-						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-						global.party[0].actions[2] = global.actionLibrary.webbing;
-					}
-					else if (global.party[0].wolf == 1 && global.party[0].ooze == 1 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf1Ooze1;
-						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-						global.party[0].actions[2] = global.actionLibrary.sludge;
-					}
-					else if (global.party[0].wolf == 1 && global.party[0].cat == 1 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf1Cat1;
-						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-						global.party[0].actions[2] = global.actionLibrary.scratch;
-					}
-					else if (global.party[0].wolf == 1 && global.party[0].rat == 1 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf1Rat1;
-						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-						global.party[0].actions[2] = global.actionLibrary.squeak;
-					}
-					else if (global.party[0].wolf == 1 && global.party[0].human == 1 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf1Human1;
-						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-						global.party[0].actions[2] = global.actionLibrary.bonk;
-					}
-					else if (global.party[0].wolf == 1 && global.party[0].fly == 1 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf1Fly1;
-						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-						global.party[0].actions[2] = global.actionLibrary.buzz;
-					}
-					else if (global.party[0].wolf == 1 && global.party[0].snake == 1 && global.party[0].combined == 2)
-					{
-						global.party[0].sprites.idle = sWolf1Snake1;
-						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-						global.party[0].actions[2] = global.actionLibrary.restrict;
-					}
-					else if (global.party[0].wolf == 3 && global.party[0].combined == 3)
-					{
-						global.party[0].sprites.idle = sWolf3;
-						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bite;
-					}
+						}
+						else if (global.party[0].wolf == 2 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf2;
+							global.party[0].attack++;
+						}
+						else if (global.party[0].wolf == 1 && global.party[0].spider == 1 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf1Spider1;
+							global.party[0].attack++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+							global.party[0].actions[2] = global.actionLibrary.webbing;
+						}
+						else if (global.party[0].wolf == 1 && global.party[0].ooze == 1 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf1Ooze1;
+							global.party[0].defense++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+							global.party[0].actions[2] = global.actionLibrary.sludge;
+						}
+						else if (global.party[0].wolf == 1 && global.party[0].cat == 1 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf1Cat1;
+							global.party[0].defense++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+							global.party[0].actions[2] = global.actionLibrary.scratch;
+						}
+						else if (global.party[0].wolf == 1 && global.party[0].rat == 1 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf1Rat1;
+							global.party[0].attack++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+							global.party[0].actions[2] = global.actionLibrary.squeak;
+						}
+						else if (global.party[0].wolf == 1 && global.party[0].human == 1 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf1Human1;
+							global.party[0].attack++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+							global.party[0].actions[2] = global.actionLibrary.bonk;
+						}
+						else if (global.party[0].wolf == 1 && global.party[0].fly == 1 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf1Fly1;
+							global.party[0].defense++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+							global.party[0].actions[2] = global.actionLibrary.buzz;
+						}
+						else if (global.party[0].wolf == 1 && global.party[0].snake == 1 && global.party[0].combined == 2)
+						{
+							global.party[0].sprites.idle = sWolf1Snake1;
+							global.party[0].defense++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+							global.party[0].actions[2] = global.actionLibrary.restrict;
+						}
+						else if (global.party[0].wolf == 3 && global.party[0].combined == 3)
+						{
+							global.party[0].sprites.idle = sWolf3;
+							global.party[0].attack++;
+							global.party[0].actions[1] = global.actionLibrary.bite;
+						}
 					
 					
-				}
-				else if(global.party[0].wolf == 3 || global.party[0].combined == 3)
-				{
-					break;
-				}
-				else
-				{
-					global.party[0].sprites.idle = sAmalgam;
-					break;
+					}
+					else if(global.party[0].wolf == 3 || global.party[0].combined == 3)
+					{
+						break;
+					}
+					else
+					{
+						global.party[0].sprites.idle = sAmalgam;
+						break;
+					}
 				}
 				break;
 
 			//Spider Potion
 			case 1:
+			if (global.party[0].spiderPotion > 0)
+			{
+				global.party[0].spiderPotion--;
 				if (global.party[0].spider < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].spider++;
@@ -218,9 +225,13 @@ var _sml = menu_level;
 					global.party[0].sprites.idle = sAmalgam;
 					break;
 				}
+			}
 				break;
 			//Ooze Potion
 			case 2:
+			if (global.party[0].oozePotion > 0)
+			{
+				global.party[0].oozePotion--;
 				if (global.party[0].ooze < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].ooze++;
@@ -303,9 +314,13 @@ var _sml = menu_level;
 					global.party[0].sprites.idle = sAmalgam;
 					break;
 				}
-				
+			}
+				break;
 			//Snake Potion
 			case 3:
+			if (global.party[0].snakePotion > 0)
+			{
+				global.party[0].snakePotion--;
 				if (global.party[0].snake < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].snake++;
@@ -390,9 +405,14 @@ var _sml = menu_level;
 					global.party[0].sprites.idle = sAmalgam;
 					break;
 				}
+			}
+			break;
 			
 			//Rat Potion
 			case 4:
+			if (global.party[0].ratPotion > 0)
+			{
+				global.party[0].ratPotion--;
 				if (global.party[0].rat < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].rat++;
@@ -476,6 +496,8 @@ var _sml = menu_level;
 					global.party[0].sprites.idle = sAmalgam;
 					break;
 				}
+			}
+			break;
 			
 			//Next Page
 			case 5:
@@ -494,6 +516,9 @@ var _sml = menu_level;
 				
 			//Cat Potion
 			case 0:
+			if (global.party[0].catPotion > 0)
+			{
+				global.party[0].catPotion--;
 				if (global.party[0].cat < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].cat++;
@@ -577,9 +602,14 @@ var _sml = menu_level;
 					global.party[0].sprites.idle = sAmalgam;
 					break;
 				}
+			}
+			break;
 			
 			//Human Potion
 			case 1:
+			if (global.party[0].humanPotion > 0)
+			{
+				global.party[0].humanPotion--;
 				if (global.party[0].human < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].human++;
@@ -665,9 +695,14 @@ var _sml = menu_level;
 					global.party[0].sprites.idle = sAmalgam;
 					break;
 				}
+			}
+			break;
 			
 			//Fly Potion
 			case 2:
+			if (global.party[0].flyPotion > 0)
+			{
+				global.party[0].flyPotion--;
 				if (global.party[0].fly < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].fly++;
@@ -748,6 +783,8 @@ var _sml = menu_level;
 					global.party[0].sprites.idle = sAmalgam;
 					break;
 				}
+			}
+			break;
 
 			//clear potions
 			case 3:

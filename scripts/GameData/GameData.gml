@@ -245,7 +245,15 @@ global.party =
 		fly: 0,
 		combined: 0,
 		sprites : {idle: sHomunc,},
-		actions : [global.actionLibrary.tackle, global.actionLibrary.flee]
+		actions : [global.actionLibrary.tackle, global.actionLibrary.flee],
+		ratPotion: 0, 
+		wolfPotion: 0, 
+		spiderPotion: 0, 
+		oozePotion: 0, 
+		snakePotion: 0, 
+		catPotion: 0, 
+		humanPotion: 0, 
+		flyPotion: 0
 	}
 
 ];
