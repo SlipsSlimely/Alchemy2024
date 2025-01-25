@@ -199,6 +199,23 @@ global.actionLibrary =
 			}
 			BattleChangeHP(_targets[0], -_damageActual, 0);
 		}
+	},
+	flee:
+	{
+		name: "Flee",
+		description: "{0} runs from battle!",
+		subMenu: -1,
+		targetRequired: true,
+		targetEnemyByDefault: false,
+		targetAll: MODE.NEVER,
+		userAnimation: "attack",
+		effectSprite: sScratch,
+		effectOnTarget: MODE.ALWAYS,
+		func: function(_user, _targets)
+		{
+
+			BattleChangeHP(_targets[0], -100, 0);
+		}
 	}
 }
 
@@ -228,7 +245,7 @@ global.party =
 		fly: 0,
 		combined: 0,
 		sprites : {idle: sHomunc,},
-		actions : [global.actionLibrary.tackle]
+		actions : [global.actionLibrary.tackle, global.actionLibrary.flee]
 	}
 
 ];
