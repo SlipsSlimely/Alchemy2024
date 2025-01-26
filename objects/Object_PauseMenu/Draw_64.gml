@@ -20,8 +20,10 @@ height = op_border*2 + string_height(option[0,0]) + (op_length-1)*op_space;
 //y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - height/2;
 
 //center menu
-x = view_xview[0]+view_wview[0]/2;
-y = view_yview[0]+view_hview[0]/2;
+//x = view_xview[0]+view_wview[0]/2;
+//y = view_yview[0]+view_hview[0]/2;
+x = view_wport[0]/2 - 38;
+y = view_hport[0]/2 - 40;
 
 // draw the menu background
 draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/sprite_height, 0, c_white, 1);
