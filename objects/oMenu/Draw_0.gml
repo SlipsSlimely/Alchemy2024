@@ -30,7 +30,7 @@ for (l = 0; l < (visibleOptionsMax + _desc); l++)
 }
 
 draw_sprite(sPointer, 0, x + xmargin + 8, y + ymargin + ((hover - _scrollPush) * heightFull) + 7);
-if (visibleOptionsMax < array_length(options)) && (hover < aray_length(options) -1)
+if (visibleOptionsMax < array_length(options)) && (hover < array_length(options) -1)
 {
 	draw_sprite(sDownArrow, 0, x + widthFull * 0.5, y + heightFull - 7);
 }
