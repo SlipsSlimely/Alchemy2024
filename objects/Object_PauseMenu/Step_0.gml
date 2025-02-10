@@ -741,8 +741,8 @@ var _sml = menu_level;
 				global.party[0].spider = 0;
 				global.party[0].wolf = 0;
 				global.party[0].combined = 0;
-				global.party[0].attack = 2;
-				global.party[0].defense = 2;
+				global.party[0].attack = 3;
+				global.party[0].defense = 3;
 				break;
 
 			//previous page
