@@ -540,14 +540,13 @@ var _sml = menu_level;
 					{
 						global.party[0].sprites.idle = sSnake1Cat1;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.scratch;
-						global.party[0].actions[2] = global.actionLibrary.restrict;
+						array_push(global.party[0].actions, global.actionLibrary.scratch, global.actionLibrary.restrict);
 					}
 					else if (global.party[0].cat == 3 && global.party[0].combined == 3)
 					{
 						global.party[0].sprites.idle = sCat3;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.scratch;
+						array_push(global.party[0].actions, global.actionLibrary.scratch);
 					}
 					
 					break;
@@ -577,69 +576,62 @@ var _sml = menu_level;
 					{
 						global.party[0].sprites.idle = sHuman1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
+						array_push(global.party[0].actions, global.actionLibrary.bonk);
 					}
 					else if (global.party[0].human == 2 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sHuman2;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
+						array_push(global.party[0].actions, global.actionLibrary.bonk);
 					}
 					else if (global.party[0].human == 1 && global.party[0].spider == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sSpider1Human1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
-						global.party[0].actions[2] = global.actionLibrary.webbing;
+						array_push(global.party[0].actions, global.actionLibrary.bonk, global.actionLibrary.webbing);
 					}
 					else if (global.party[0].human == 1 && global.party[0].ooze == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sOoze1Human1;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
-						global.party[0].actions[2] = global.actionLibrary.sludge;
+						array_push(global.party[0].actions, global.actionLibrary.bonk, global.actionLibrary.sludge);
 					}
 					else if (global.party[0].human == 1 && global.party[0].cat == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sCat1Human1;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
-						global.party[0].actions[2] = global.actionLibrary.scratch;
+						array_push(global.party[0].actions, global.actionLibrary.bonk, global.actionLibrary.scratch);
 					}
 					else if (global.party[0].human == 1 && global.party[0].rat == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sRat1Human1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
-						global.party[0].actions[2] = global.actionLibrary.squeak;
+						array_push(global.party[0].actions, global.actionLibrary.bonk, global.actionLibrary.squeak);
 					}
 					else if (global.party[0].wolf == 1 && global.party[0].human == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sWolf1Human1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
-						global.party[0].actions[2] = global.actionLibrary.bite;
+						array_push(global.party[0].actions, global.actionLibrary.bonk, global.actionLibrary.bite);
 					}
 					else if (global.party[0].human == 1 && global.party[0].fly == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sHuman1Fly1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
-						global.party[0].actions[2] = global.actionLibrary.buzz;
+						array_push(global.party[0].actions, global.actionLibrary.bonk, global.actionLibrary.buzz);
 					}
 					else if (global.party[0].human == 1 && global.party[0].snake == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sSnake1Human1;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
-						global.party[0].actions[2] = global.actionLibrary.restrict;
+						array_push(global.party[0].actions, global.actionLibrary.bonk, global.actionLibrary.restrict);
 					}
 					else if (global.party[0].human == 3 && global.party[0].combined == 3)
 					{
 						global.party[0].sprites.idle = sHuman3;
 						global.party[0].defense++;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.bonk;
+						array_push(global.party[0].actions, global.actionLibrary.bonk);
 						
 					}
 					
@@ -669,66 +661,59 @@ var _sml = menu_level;
 					if (global.party[0].fly == 1 && global.party[0].combined == 1)
 					{
 						global.party[0].sprites.idle = sFly1;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
+						array_push(global.party[0].actions, global.actionLibrary.buzz);
 					}
 					else if (global.party[0].fly == 2 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sFly2;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
+						array_push(global.party[0].actions, global.actionLibrary.buzz);
 					}
 					else if (global.party[0].fly == 1 && global.party[0].spider == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sSpider1Fly1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
-						global.party[0].actions[2] = global.actionLibrary.wedding;
+						array_push(global.party[0].actions, global.actionLibrary.buzz, global.actionLibrary.wedding);
 					}
 					else if (global.party[0].fly == 1 && global.party[0].ooze == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sOoze1Fly1;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
-						global.party[0].actions[2] = global.actionLibrary.sludge;
+						array_push(global.party[0].actions, global.actionLibrary.buzz, global.actionLibrary.sludge);
 					}
 					else if (global.party[0].fly == 1 && global.party[0].cat == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sCat1Fly1;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
-						global.party[0].actions[2] = global.actionLibrary.scratch;
+						array_push(global.party[0].actions, global.actionLibrary.buzz, global.actionLibrary.scratch);
 					}
 					else if (global.party[0].fly == 1 && global.party[0].rat == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sRat1Fly1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
-						global.party[0].actions[2] = global.actionLibrary.squeak;
+						array_push(global.party[0].actions, global.actionLibrary.buzz, global.actionLibrary.squeak);
 					}
 					else if (global.party[0].fly == 1 && global.party[0].human == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sHuman1Fly1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
-						global.party[0].actions[2] = global.actionLibrary.bonk;
+						array_push(global.party[0].actions, global.actionLibrary.buzz, global.actionLibrary.bonk);
 					}
 					else if (global.party[0].wolf == 1 && global.party[0].fly == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sWolf1Fly1;
 						global.party[0].attack++;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
-						global.party[0].actions[2] = global.actionLibrary.bite;
+						array_push(global.party[0].actions, global.actionLibrary.buzz, global.actionLibrary.bite);
 					}
 					else if (global.party[0].fly == 1 && global.party[0].snake == 1 && global.party[0].combined == 2)
 					{
 						global.party[0].sprites.idle = sSnake1Fly1;
 						global.party[0].defense++;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
-						global.party[0].actions[2] = global.actionLibrary.restrict;
+						array_push(global.party[0].actions, global.actionLibrary.buzz, global.actionLibrary.restrict);
 					}
 					else if (global.party[0].fly == 3 && global.party[0].combined == 3)
 					{
 						global.party[0].sprites.idle = sFly3;
-						global.party[0].actions[1] = global.actionLibrary.buzz;
+						array_push(global.party[0].actions, global.actionLibrary.buzz);
 					}
 					
 					break;
