@@ -8,6 +8,6 @@ draw_text(x+1,y,text);
 draw_text(x-1,y,text);
 draw_text(x,y+1,text);
 draw_text(x,y-1,text);
-draw_set_color(col);
+draw_set_color(c_red);
 draw_text(x,y,text);
 draw_set_alpha(1.0);
