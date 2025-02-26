@@ -1,5 +1,5 @@
 /// @description Insert description here
-event_inherited();
+//event_inherited();
 if (hp <= 0)
 {
 	image_blend = c_red;

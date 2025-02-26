@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description This is the code that moves the player between rooms
 if place_meeting(x, y, Object_Player) && !instance_exists(Object_Warp)
 	{
 	var inst = instance_create_depth(0, 0, -9999, Object_Warp);
