@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description This sets up the code for the main menu, menu
 //get inputs
 var up_key = keyboard_check_pressed(vk_up);
 var down_key = keyboard_check_pressed(vk_down);

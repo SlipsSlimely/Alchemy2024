@@ -1,4 +1,4 @@
-/// @description This sets up the information for the main menu
+/// @description This sets up the information for the control menu
 
 //up_key = keyboard_check_pressed(vk_up);
 //down_key = keyboard_check_pressed(vk_down);

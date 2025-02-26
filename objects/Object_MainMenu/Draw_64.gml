@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description This is what creates and maintains the look of the main menu
 display_set_gui_size(surface_get_width(application_surface), surface_get_height(application_surface));
 // draw the options
 draw_set_font(global.font_main);

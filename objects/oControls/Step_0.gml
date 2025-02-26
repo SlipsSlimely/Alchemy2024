@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description This is the code that lets the player tab into and out of the controls menu
 //get inputs
 var up_key = keyboard_check_pressed(vk_up);
 var down_key = keyboard_check_pressed(vk_down);

@@ -1,4 +1,4 @@
-/// @description This sets up our main menus appearance
+/// @description This is currently a useless function
 //// draw the options
 //draw_set_font(global.font_main);
 //draw_set_valign(fa_top);

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description The code here kicks in when the player chooses their actions in battle
 battleState();
 
 //Cursor control

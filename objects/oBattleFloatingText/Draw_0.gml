@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description This sets the info for how the text in battle will appear
 draw_set_font(font);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);

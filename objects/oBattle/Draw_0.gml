@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description The code here sets up the appearance of the battle scene
 
 //draw background art
 draw_sprite(battleBackground,0,x,y);

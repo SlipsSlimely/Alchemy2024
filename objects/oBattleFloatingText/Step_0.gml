@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description This code ensures the text is destroyed quickly so it doesn't stay on screen forever
 image_alpha -= 0.02;
 if (vspeed < 0) image_alpha = 1.0;
 if (y > ystart) vspeed = 0;
