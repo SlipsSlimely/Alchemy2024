@@ -1,4 +1,4 @@
-/// @description This seets up all of the functions that run the battle system itself
+/// @description This sets up all of the functions that run the battle system itself
 instance_deactivate_all(true);
 
 units = [];

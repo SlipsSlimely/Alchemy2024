@@ -1,5 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+//below is the function read and used to create the encounter screen every time the player gets into an encounter
 function NewEncounter(_enemies, _bg, _fg)
 {	
 	instance_create_depth
@@ -13,6 +15,7 @@ function NewEncounter(_enemies, _bg, _fg)
 
 }
 
+//below is the function used to update the game state in a battle as everyone's HP changes
 function BattleChangeHP(_target, _amount, _AliveDeadOrEither =0)
 {
 	//_AliveDeadOrEither: 0 = alive only, 1 = dead only, 2 = any
