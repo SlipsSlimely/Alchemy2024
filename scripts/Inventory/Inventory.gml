@@ -3,7 +3,7 @@
 function Inventory() constructor{
 	
 	_inventory = [];
-	_max_inventory_items = 20;
+	_max_inventory_items = 3;
 	
 	add = function(_sprite, _name, _object, _description = ""){
 		if(array_length(_inventory) < _max_inventory_items){

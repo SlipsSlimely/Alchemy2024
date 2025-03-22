@@ -9,6 +9,7 @@
     {"name":"inst_EBD74B1","path":"rooms/Room_Main_Menu/Room_Main_Menu.yy",},
     {"name":"inst_10C0FA0B","path":"rooms/Room_Main_Menu/Room_Main_Menu.yy",},
     {"name":"inst_1EB3A369","path":"rooms/Room_Main_Menu/Room_Main_Menu.yy",},
+    {"name":"inst_792C5566","path":"rooms/Room_Main_Menu/Room_Main_Menu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -17,6 +18,7 @@
         {"$GMRInstance":"v1","%Name":"inst_EBD74B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_EBD74B1","objectId":{"name":"Object_Settings","path":"objects/Object_Settings/Object_Settings.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_10C0FA0B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10C0FA0B","objectId":{"name":"Object_MainMenu","path":"objects/Object_MainMenu/Object_MainMenu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":96.0,},
         {"$GMRInstance":"v1","%Name":"inst_1EB3A369","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1EB3A369","objectId":{"name":"Object_Pause","path":"objects/Object_Pause/Object_Pause.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
+        {"$GMRInstance":"v1","%Name":"inst_792C5566","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_792C5566","objectId":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":64.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"Room_Main_Menu",

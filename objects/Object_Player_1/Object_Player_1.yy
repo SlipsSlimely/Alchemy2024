@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite_Player_1",
-    "path":"sprites/Sprite_Player_1/Sprite_Player_1.yy",
+    "name":"SpInventory",
+    "path":"sprites/SpInventory/SpInventory.yy",
   },
   "spriteMaskId":null,
   "visible":true,
