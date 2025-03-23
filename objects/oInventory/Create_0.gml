@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description This is the first inventory I built and tested
 
 inventory = new Inventory();
 

@@ -10,8 +10,8 @@
   "name":"oInventory",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/UI.yy",
+    "name":"Testing 1",
+    "path":"folders/Objects/Testing 1.yy",
   },
   "parentObjectId":null,
   "persistent":true,
