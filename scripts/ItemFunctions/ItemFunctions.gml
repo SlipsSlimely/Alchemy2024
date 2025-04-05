@@ -1,5 +1,5 @@
 //pickup items
-function item_pickup(_item)
+function item_add(_item)
 {
 	array_push(oItemManager.inv, _item);
 }

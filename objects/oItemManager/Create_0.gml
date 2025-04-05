@@ -34,7 +34,6 @@ global.item_list =
 
 inv = array_create(0);
 
-	array_push(inv, global.item_list.burger);
 	
 //for drawing and mouse positions
 sep = 16;

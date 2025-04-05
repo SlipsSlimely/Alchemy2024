@@ -1,2 +1,2 @@
 /// @description Insert description here
-font_delete(global.font_main);
+//font_delete(global.font_main); useless code
