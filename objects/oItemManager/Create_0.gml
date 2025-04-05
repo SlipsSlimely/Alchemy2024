@@ -5,28 +5,29 @@
 
 depth = -9999;
 
-//create items
+//item constructor
+function create_item(_name, _desc, _spr) constructor
+{
+	name = _name;
+	description = _desc;
+	sprite = _spr;
+}
 
+//create items
 global.item_list =
 {
 
-	burger : 
-		{
-	
-		name : "Burger",
-		description : "It's a burger!",
-		sprite : sBurger,
-	
-		},
+	burger : new create_item(
+		"Burger",
+		"It's a burger!",
+		sBurger
+		),
 		
-	bomb : 
-		{
-	
-		name : "Bomb",
-		description : "It's a bomb!",
-		sprite : sBurger,
-	
-		}
+	bomb : new create_item(
+		"Bomb",
+		"It's a bomb!",
+		sBurger
+		),
 }
 
 //create inventory
@@ -34,3 +35,7 @@ global.item_list =
 inv = array_create(0);
 
 	array_push(inv, global.item_list.burger);
+	
+//for drawing and mouse positions
+sep = 16;
+screen_bord = 16;
