@@ -13,3 +13,12 @@ for (var i = 0; i < array_length(inv); i ++)
 		selected_item = i;
 	}
 }
+
+if selected_item != -1
+{
+	//use an item
+	if mouse_check_button_pressed(mb_left)
+	{
+		inv[selected_item].effect();
+	}
+}

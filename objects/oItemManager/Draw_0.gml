@@ -22,7 +22,7 @@ for (var i = 0; i < array_length(inv); i ++)
 	//draw the item description when the item is hovered over
 	if selected_item == i 
 	{
-		draw_text_ext(_xx + 16, _yy + _sep*array_length(inv), inv[i].description, 12, 80 );
+		draw_text_ext(_xx, _yy + _sep*array_length(inv), inv[i].description, 12, 80 );
 	}
 	
 	
