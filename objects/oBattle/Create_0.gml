@@ -38,7 +38,8 @@ for (var i = 0; i < array_length(enemies); i++)
 }
 
 //make party
-for (var i = 0; i < array_length(global.party); i++)
+//for (var i = 0; i < array_length(global.party); i++) This will push the entire party into battle, not what we want
+for (var i = 0; i < 1; i++)
 {
 	partyUnits[i] = instance_create_depth(x+90+(i*10), y+110+(i*20), depth-10, oBattleUnitPC, global.party[i]);
 	array_push(units, partyUnits[i]); 
@@ -207,59 +208,67 @@ function BattleStateVictoryCheck()
 	{
 		if (units[0].name = "Rat")
 		{
-			global.party[0].ratPotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.ratPotion);
+			global.Inventory.PotionPouch.ratPotionPouch++;
 		}
 		else if (units[0].name = "Wolf")
 		{
-			global.party[0].wolfPotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.wolfPotion);
+			global.Inventory.PotionPouch.wolfPotionPouch++;
 		}
 		else if (units[0].name = "Spider")
 		{
-			global.party[0].spiderPotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.spiderPotion);
+			global.Inventory.PotionPouch.spiderPotionPouch++;
 		}
 		else if (units[0].name = "Ooze")
 		{
-			global.party[0].oozePotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.oozePotion);
+			global.Inventory.PotionPouch.oozePotionPouch++;
 		}
 		else if (units[0].name = "Snake")
 		{
-			global.party[0].snakePotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.snakePotion);
+			global.Inventory.PotionPouch.snakePotionPouch++;
 		}
 		else if (units[0].name = "Cat")
 		{
-			global.party[0].catPotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.catPotion);
+			global.Inventory.PotionPouch.catPotionPouch++;
 		}
 		else if (units[0].name = "Human")
 		{
-			global.party[0].humanPotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.humanPotion);
+			global.Inventory.PotionPouch.humanPotionPouch++;
 		}
 		else if (units[0].name = "Fly")
 		{
-			global.party[0].flyPotion = +1;
 			battleText = "You won";
 			instance_destroy();
 			instance_activate_all();
+			//item_add(global.item_list.flyPotion);
+			global.Inventory.PotionPouch.flyPotionPouch++;
 		}
 			
 		

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description  This checks to see if our mouse is hovering over the item we wanna use at any given moment
 // get selected item
 selected_item = -1;
 

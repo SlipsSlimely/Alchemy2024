@@ -39,6 +39,11 @@ var _sml = menu_level;
 			case 2:
 				game_end();
 				break;
+				
+			//quit game
+			case 3:
+				menu_level = 3;
+				break;
 			}
 		break;
 		
@@ -48,9 +53,9 @@ var _sml = menu_level;
 
 			//Wolf Potion
 			case 0:
-			if (global.party[0].wolfPotion > 0)
+			if (global.Inventory.PotionPouch.wolfPotionPouch > 0)
 			{
-				global.party[0].wolfPotion--;
+				global.Inventory.PotionPouch.wolfPotionPouch--;
 					if (global.party[0].wolf < 3 && global.party[0].combined < 3)
 					{
 						global.party[0].wolf++;
@@ -132,9 +137,9 @@ var _sml = menu_level;
 
 			//Spider Potion
 			case 1:
-			if (global.party[0].spiderPotion > 0) //continue adding the array push from here down, gotta be done to fix the attack system
+			if (global.Inventory.PotionPouch.spiderPotionPouch> 0) //continue adding the array push from here down, gotta be done to fix the attack system
 			{
-				global.party[0].spiderPotion--;
+				global.Inventory.PotionPouch.spiderPotionPouch--;
 				if (global.party[0].spider < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].spider++;
@@ -215,9 +220,9 @@ var _sml = menu_level;
 				break;
 			//Ooze Potion
 			case 2:
-			if (global.party[0].oozePotion > 0)
+			if (global.Inventory.PotionPouch.oozePotionPouch > 0)
 			{
-				global.party[0].oozePotion--;
+				global.Inventory.PotionPouch.oozePotionPouch--;
 				if (global.party[0].ooze < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].ooze++;
@@ -297,9 +302,9 @@ var _sml = menu_level;
 				break;
 			//Snake Potion
 			case 3:
-			if (global.party[0].snakePotion > 0)
+			if (global.Inventory.PotionPouch.snakePotionPouch > 0)
 			{
-				global.party[0].snakePotion--;
+				global.Inventory.PotionPouch.snakePotionPouch--;
 				if (global.party[0].snake < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].snake++;
@@ -382,9 +387,9 @@ var _sml = menu_level;
 			
 			//Rat Potion
 			case 4:
-			if (global.party[0].ratPotion > 0)
+			if (global.Inventory.PotionPouch.ratPotionPouch > 0)
 			{
-				global.party[0].ratPotion--;
+				global.Inventory.PotionPouch.ratPotionPouch--;
 				if (global.party[0].rat < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].rat++;
@@ -481,9 +486,9 @@ var _sml = menu_level;
 				
 			//Cat Potion
 			case 0:
-			if (global.party[0].catPotion > 0)
+			if (global.Inventory.PotionPouch.catPotionPouch > 0)
 			{
-				global.party[0].catPotion--;
+				global.Inventory.PotionPouch.catPotionPouch--;
 				if (global.party[0].cat < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].cat++;
@@ -565,9 +570,9 @@ var _sml = menu_level;
 			
 			//Human Potion
 			case 1:
-			if (global.party[0].humanPotion > 0)
+			if (global.Inventory.PotionPouch.humanPotionPouch > 0)
 			{
-				global.party[0].humanPotion--;
+				global.Inventory.PotionPouch.humanPotionPouch--;
 				if (global.party[0].human < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].human++;
@@ -651,9 +656,9 @@ var _sml = menu_level;
 			
 			//Fly Potion
 			case 2:
-			if (global.party[0].flyPotion > 0)
+			if (global.Inventory.PotionPouch.flyPotionPouch > 0)
 			{
-				global.party[0].flyPotion--;
+				global.Inventory.PotionPouch.flyPotionPouch--;
 				if (global.party[0].fly < 3 && global.party[0].combined < 3)
 				{
 					global.party[0].fly++;
@@ -750,6 +755,28 @@ var _sml = menu_level;
 				menu_level = 1;
 				break;
 			
+			}
+		break;
+		
+		//party manager
+		case 3:
+		switch(pos){
+
+			//monster 1
+			case 0:
+				array_insert(global.party, 0,global.party[0]);
+				break;
+
+			//monster 2
+			case 1:
+				array_insert(global.party, 0,global.party[1]);
+				break;
+
+			//back
+			case 2:
+				menu_level = 0;
+				break;
+				
 			}
 		break;
 	}

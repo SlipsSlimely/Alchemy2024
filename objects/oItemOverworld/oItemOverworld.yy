@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBurger",
-    "path":"sprites/sBurger/sBurger.yy",
+    "name":"sHomunc",
+    "path":"sprites/sHomunc/sHomunc.yy",
   },
   "spriteMaskId":null,
   "visible":true,

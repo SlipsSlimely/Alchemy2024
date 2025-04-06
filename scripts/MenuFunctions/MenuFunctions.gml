@@ -77,7 +77,7 @@ function MenuSelectAction(_user, _action)
 				active = true;
 				activeAction = _action;
 				targetAll = _action.targetAll;
-				if (targetAll == MODE.VARIES) targetAll = true; //"togle" starts as true by default
+				if (targetAll == MODE.VARIES) targetAll = true; //"toggle" starts as true by default
 				activeUser = _user;
 				
 				//which side to target by default?
