@@ -36,7 +36,7 @@ option[2, 4] = "Previous Page";
 
 //party manager
 option[3, 0] = "" + string(global.party[0].name);
-option[3, 1] = ""  + string(global.party[1].name);
+option[3, 1] = ""  + string(global.party[0].name);
 option[3, 2] = "Back";
 
 op_length = 0;

@@ -5,6 +5,6 @@ sprite_index = item.sprite;
 if place_meeting(x,y, Object_Player)
 {
 	item_add(item);
-	//global.Inventory.PotionPouch.flyPotionPouch++;
+	global.Inventory.PotionPouch.wolfPotionPouch++;
 	instance_destroy();
 }

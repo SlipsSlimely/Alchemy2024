@@ -1,2 +1,2 @@
 /// @description Insert description here
-item = global.item_list.homunculus;
+item = global.item_list.wolfPotion;
