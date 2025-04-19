@@ -50,7 +50,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"Alchemy2024",
   "resources":[
@@ -76,6 +76,8 @@
     {"id":{"name":"oDisplayManager","path":"objects/oDisplayManager/oDisplayManager.yy",},},
     {"id":{"name":"oEnemyFight","path":"objects/oEnemyFight/oEnemyFight.yy",},},
     {"id":{"name":"oHouse","path":"objects/oHouse/oHouse.yy",},},
+    {"id":{"name":"oItemManager_test","path":"objects/oItemManager_test/oItemManager_test.yy",},},
+    {"id":{"name":"oItemManager_tester","path":"objects/oItemManager_tester/oItemManager_tester.yy",},},
     {"id":{"name":"oItemManager","path":"objects/oItemManager/oItemManager.yy",},},
     {"id":{"name":"oItemOverworld","path":"objects/oItemOverworld/oItemOverworld.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
@@ -98,6 +100,7 @@
     {"id":{"name":"BattleFunctions","path":"scripts/BattleFunctions/BattleFunctions.yy",},},
     {"id":{"name":"GameData","path":"scripts/GameData/GameData.yy",},},
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},},
+    {"id":{"name":"InventoryBIS","path":"scripts/InventoryBIS/InventoryBIS.yy",},},
     {"id":{"name":"ItemFunctions","path":"scripts/ItemFunctions/ItemFunctions.yy",},},
     {"id":{"name":"MenuFunctions","path":"scripts/MenuFunctions/MenuFunctions.yy",},},
     {"id":{"name":"sAmalgam","path":"sprites/sAmalgam/sAmalgam.yy",},},
