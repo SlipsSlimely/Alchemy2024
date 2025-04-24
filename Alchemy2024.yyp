@@ -98,6 +98,7 @@
     {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"id":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
     {"id":{"name":"BattleFunctions","path":"scripts/BattleFunctions/BattleFunctions.yy",},},
+    {"id":{"name":"Camera","path":"scripts/Camera/Camera.yy",},},
     {"id":{"name":"GameData","path":"scripts/GameData/GameData.yy",},},
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},},
     {"id":{"name":"InventoryBIS","path":"scripts/InventoryBIS/InventoryBIS.yy",},},

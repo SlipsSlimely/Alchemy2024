@@ -1,4 +1,6 @@
 /// @description This runs every frame of the game
+
+//Below is everything pertaining to moving the player around the screen
 var right_key = keyboard_check(vk_right);
 var left_key = keyboard_check(vk_left);
 var up_key = keyboard_check(vk_up);
@@ -30,3 +32,8 @@ else
 
 x += x_speed;
 y += y_speed; 
+
+//below opens up the player inventory
+if (keyboard_check_pressed(ord("M"))) {
+	isShowingMenu = true;
+}
