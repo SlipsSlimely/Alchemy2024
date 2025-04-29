@@ -127,6 +127,8 @@
     {"id":{"name":"sHuman3","path":"sprites/sHuman3/sHuman3.yy",},},
     {"id":{"name":"sIcon","path":"sprites/sIcon/sIcon.yy",},},
     {"id":{"name":"sIntro","path":"sprites/sIntro/sIntro.yy",},},
+    {"id":{"name":"sInventoryBackdrop","path":"sprites/sInventoryBackdrop/sInventoryBackdrop.yy",},},
+    {"id":{"name":"sInventoryOutline","path":"sprites/sInventoryOutline/sInventoryOutline.yy",},},
     {"id":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},},
     {"id":{"name":"sNewMoonBG","path":"sprites/sNewMoonBG/sNewMoonBG.yy",},},
     {"id":{"name":"sOoze1","path":"sprites/sOoze1/sOoze1.yy",},},
