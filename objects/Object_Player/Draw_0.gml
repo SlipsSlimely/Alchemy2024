@@ -1,4 +1,9 @@
 /// @description This draws the players inventory
+
+//This is required when adding a draw event to a player character
+//Without it the player character won't actually appear due to the draw event existing
+draw_self();
+
 if (isShowingMenu) {
 
 	//Pause the game
