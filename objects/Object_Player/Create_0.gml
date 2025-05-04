@@ -10,3 +10,7 @@ move_speed = 2;
 myItems = global.AllItems;
 
 isShowingMenu = false;
+menuWidth = 6;
+menuHeight = 48
+itemSeperation = 9;
+itemScale = 1;

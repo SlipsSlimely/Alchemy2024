@@ -1,5 +1,13 @@
 /// @description This sets up our pause menus appearance
 display_set_gui_size(surface_get_width(application_surface), surface_get_height(application_surface));
+//The following 3 lines of code darken the background while paused
+draw_set_color(c_black);
+draw_set_alpha(.75);
+draw_rectangle(0, 0, room_width, room_height, false);
+
+//Reset the alpha
+draw_set_alpha(1);
+
 // draw the options
 draw_set_font(global.font_main);
 draw_set_valign(fa_top);

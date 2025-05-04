@@ -201,13 +201,13 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rAllsettings","path":"rooms/rAllsettings/rAllsettings.yy",},},
     {"roomId":{"name":"Room_Main_Menu","path":"rooms/Room_Main_Menu/Room_Main_Menu.yy",},},
     {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"roomId":{"name":"Room6","path":"rooms/Room6/Room6.yy",},},
+    {"roomId":{"name":"rAllsettings","path":"rooms/rAllsettings/rAllsettings.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

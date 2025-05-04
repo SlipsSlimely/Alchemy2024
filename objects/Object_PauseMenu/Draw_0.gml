@@ -1,4 +1,4 @@
-///// @description This sets up our pause menus appearance
+///// @description Currently useless
 //display_set_gui_size(surface_get_width(application_surface), surface_get_height(application_surface));
 //// draw the options
 //draw_set_font(global.font_main);
