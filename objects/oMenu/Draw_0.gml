@@ -5,7 +5,7 @@ draw_set_font(global.font_main);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-var _desc = !(description == -1);
+var _desc = !(sDescription == -1);
 var _scrollPush = max(0, hover - (visibleOptionsMax-1));
 
 for (var l = 0; l < (visibleOptionsMax + _desc); l++)
@@ -14,7 +14,7 @@ for (var l = 0; l < (visibleOptionsMax + _desc); l++)
 	draw_set_color(c_white);
 	if(l == 0) && (_desc)
 	{
-		draw_text( x + xmargin, y+ ymargin, description);
+		draw_text( x + xmargin, y+ ymargin, sDescription);
 	}
 	else
 	{
