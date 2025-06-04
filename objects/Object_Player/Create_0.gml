@@ -6,7 +6,7 @@ y_speed = 0;
 
 move_speed = 2;
 
-//The next two variables are there for inventory management
+
 myItems = global.AllItems;
 
 isShowingMenu = false;

@@ -1,5 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+//The action library is where all moves that can be used in combat are kept
 global.actionLibrary =
 {
 	tackle:
@@ -200,6 +202,7 @@ global.actionLibrary =
 			BattleChangeHP(_targets[0], -_damageActual, 0);
 		}
 	},
+	//Flee is currently a very early version of a Run option for combat, gotta figure out how to make this work better
 	flee:
 	{
 		name: "Flee",
@@ -226,6 +229,7 @@ enum MODE
 	VARIES = 2
 }
 
+//This tracks the players party, when adding or moving members I need to reference this like an item inventory. 
 global.party = 
 [
 	
@@ -250,6 +254,7 @@ global.party =
 
 ];
 
+//This holds all data for every enemy type in the game
 global.enemies =
 {
 	wolf:
