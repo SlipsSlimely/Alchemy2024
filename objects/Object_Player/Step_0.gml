@@ -2,7 +2,7 @@
 
 
 
-//Below is everything pertaining to moving the player around the screen
+//Below is everything pertaining to moving the player around the screen these can be changed is seen fit
 var right_key = keyboard_check(vk_right);
 var left_key = keyboard_check(vk_left);
 var up_key = keyboard_check(vk_up);
