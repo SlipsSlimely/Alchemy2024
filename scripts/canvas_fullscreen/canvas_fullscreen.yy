@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"BrowserFullscreen",
+  "%Name":"canvas_fullscreen",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"BrowserFullscreen",
+  "name":"canvas_fullscreen",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

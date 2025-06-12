@@ -5,4 +5,5 @@ global.font_main = font_add_sprite(Sprite_Font, 32, true, 1);
 base_size = 640;
 width = browser_width;
 height = browser_height;
-BrowserFullscreen(base_size);
+
+canvas_fullscreen(base_size);

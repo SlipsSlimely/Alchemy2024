@@ -202,9 +202,10 @@ global.actionLibrary =
 			BattleChangeHP(_targets[0], -_damageActual, 0);
 		}
 	},
-	//Flee is currently a very early version of a Run option for combat, gotta figure out how to make this work better
+	
 	flee:
 	{
+		//Flee is currently a very early version of a Run option for combat, gotta figure out how to make this work better
 		name: "Flee",
 		description: "{0} runs from battle!",
 		subMenu: -1,
