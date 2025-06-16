@@ -30,6 +30,15 @@ if (isShowingMenu) {
 		}
 		
 		draw_sprite_ext(sprite, 0, itemX, itemY, itemScale, itemScale, 0, c_white, 1);
+		
+		//Check if mouse is hovering over an item
+		//box is currently off by 3 pixels
+		if (point_in_rectangle(mouse_x, mouse_y, itemX - 4, itemY - 4, itemX + 4, itemY + 4)){
+			draw_set_alpha(0.25);
+			draw_set_color(c_blue);
+			draw_rectangle(itemX - 4, itemY - 4, itemX + 4, itemY + 4, false);
+			draw_set_alpha(1);
+		}
 	}
 	
 	//Front of the inventory
