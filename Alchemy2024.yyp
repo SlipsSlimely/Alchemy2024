@@ -80,6 +80,7 @@
     {"id":{"name":"oItemManager_tester","path":"objects/oItemManager_tester/oItemManager_tester.yy",},},
     {"id":{"name":"oItemManager","path":"objects/oItemManager/oItemManager.yy",},},
     {"id":{"name":"oItemOverworld","path":"objects/oItemOverworld/oItemOverworld.yy",},},
+    {"id":{"name":"oItemParent","path":"objects/oItemParent/oItemParent.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
     {"id":{"name":"oTree","path":"objects/oTree/oTree.yy",},},
     {"id":{"name":"oWildSpawnCat","path":"objects/oWildSpawnCat/oWildSpawnCat.yy",},},
