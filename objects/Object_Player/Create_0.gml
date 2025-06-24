@@ -10,6 +10,8 @@ move_speed = 2;
 myItems = global.AllItems;
 
 isShowingMenu = false;
+showingDescription = false;
+sequence = undefined;
 menuWidth = 6;
 menuHeight = 48
 itemSeperation = 9;

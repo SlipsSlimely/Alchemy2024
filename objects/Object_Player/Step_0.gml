@@ -39,3 +39,14 @@ y += y_speed;
 if (keyboard_check_pressed(ord("M"))) {
 	isShowingMenu = true;
 }
+
+//Animations
+//This if statement allows the animation to play, head right, and display text
+if (sequence != undefined && layer_sequence_is_finished(sequence) && layer_sequence_get_headdir(sequence) == seqdir_right){
+	showingDescription = true;	
+}
+
+//This if statement allows the animation to reverse itself, head left, and then destroy itself so we can replay it later as needed
+if (sequence != undefined && layer_sequence_is_finished(sequence) && layer_sequence_get_headdir(sequence) == seqdir_left){
+	layer_sequence_destroy(sequence);
+}

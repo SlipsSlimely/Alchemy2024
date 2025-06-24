@@ -32,14 +32,27 @@ if (isShowingMenu) {
 		draw_sprite_ext(sprite, 0, itemX, itemY, itemScale, itemScale, 0, c_white, 1);
 		
 		//Check if mouse is hovering over an item
-		//box is currently off by 3 pixels
-		if (point_in_rectangle(mouse_x, mouse_y, itemX - 4, itemY - 4, itemX + 4, itemY + 4)){
+		if (point_in_rectangle(mouse_x, mouse_y, itemX - 1, itemY - 1, itemX + 7, itemY + 7)){
 			draw_set_alpha(0.25);
 			draw_set_color(c_blue);
-			draw_rectangle(itemX - 4, itemY - 4, itemX + 4, itemY + 4, false);
+			draw_rectangle(itemX - 1, itemY - 1, itemX + 7, itemY + 7, false);
 			draw_set_alpha(1);
+			
+			//Clicked on an item
+			if(mouse_check_button_pressed(mb_left) && showingDescription == false) {
+				sequence = layer_sequence_create("Spawns", CameraMiddleX() - 70, CameraMiddleY() + 9, sqDescriptionAnimation);
+			}
+		
 		}
 	}
+	if (point_in_rectangle(mouse_x, mouse_y, CameraX() + 196, CameraY() + 43, CameraX() + 200, CameraY() + 48) == true){
+		if(mouse_check_button_pressed(mb_left)) {
+			layer_sequence_headdir(sequence, seqdir_left);
+			layer_sequence_play(sequence);
+			showingDescription = false;
+		}
+	}
+	//draw_rectangle(CameraX() + 196, CameraY() + 43, CameraX() + 200, CameraY() + 48, false);	
 	
 	//Front of the inventory
 	draw_sprite(sInventoryOutline, 0, CameraX(), CameraMiddleY()-50);
