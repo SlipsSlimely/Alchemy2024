@@ -75,6 +75,7 @@
     {"id":{"name":"oCredits","path":"objects/oCredits/oCredits.yy",},},
     {"id":{"name":"oDisplayManager","path":"objects/oDisplayManager/oDisplayManager.yy",},},
     {"id":{"name":"oEnemyFight","path":"objects/oEnemyFight/oEnemyFight.yy",},},
+    {"id":{"name":"oGameScaleManager","path":"objects/oGameScaleManager/oGameScaleManager.yy",},},
     {"id":{"name":"oHouse","path":"objects/oHouse/oHouse.yy",},},
     {"id":{"name":"oItemManager_test","path":"objects/oItemManager_test/oItemManager_test.yy",},},
     {"id":{"name":"oItemManager_tester","path":"objects/oItemManager_tester/oItemManager_tester.yy",},},
