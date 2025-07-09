@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPotionSheet",
-    "path":"sprites/sPotionSheet/sPotionSheet.yy",
+    "name":"sSpiderPotion",
+    "path":"sprites/sSpiderPotion/sSpiderPotion.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPotionSheet",
-    "path":"sprites/sPotionSheet/sPotionSheet.yy",
+    "name":"sCatPotion",
+    "path":"sprites/sCatPotion/sCatPotion.yy",
   },
   "spriteMaskId":null,
   "visible":true,

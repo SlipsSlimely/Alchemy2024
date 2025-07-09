@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPotionSheet",
-    "path":"sprites/sPotionSheet/sPotionSheet.yy",
+    "name":"sOozePotion",
+    "path":"sprites/sOozePotion/sOozePotion.yy",
   },
   "spriteMaskId":null,
   "visible":true,

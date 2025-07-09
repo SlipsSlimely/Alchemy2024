@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPotionSheet",
-    "path":"sprites/sPotionSheet/sPotionSheet.yy",
+    "name":"sFlyPotion",
+    "path":"sprites/sFlyPotion/sFlyPotion.yy",
   },
   "spriteMaskId":null,
   "visible":true,

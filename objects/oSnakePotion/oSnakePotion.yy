@@ -6,8 +6,8 @@
   "name":"oSnakePotion",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Testing 2",
+    "path":"folders/Objects/Testing 2.yy",
   },
   "parentObjectId":{
     "name":"oItemParent",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sSnakePotion",
+    "path":"sprites/sSnakePotion/sSnakePotion.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
