@@ -42,8 +42,8 @@ enum SortType {
 
 global.AllItems = ds_grid_create(0, Item.Height);
 
-AddItemToMasterList(["Ooze Potion", sOozePotion, 1, Type.Weapon, 5, oOozePotion]);
-AddItemToMasterList(["Small Knife", sBurger, 1, Type.Weapon, 5, oItemOverworld]);
+AddItemToMasterList(["Ooze Potion", sOozePotion, 1, Type.Consumable, 5, oOozePotion]);
+AddItemToMasterList(["Wolf Potion", sWolfPotion, 1, Type.Weapon, 10, oWolfPotion]);
 AddItemToMasterList(["Small Knife", sBurger, 1, Type.Weapon, 5, oItemOverworld]);
 AddItemToMasterList(["Small Knife", sBurger, 1, Type.Weapon, 5, oItemOverworld]);
 AddItemToMasterList(["Small Knife", sBurger, 1, Type.Weapon, 5, oItemOverworld]);

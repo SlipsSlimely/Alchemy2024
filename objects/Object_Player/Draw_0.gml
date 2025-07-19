@@ -40,7 +40,8 @@ if (isShowingMenu) {
 			
 			//Draw item info
 			if(instance_exists(myItems[# i, Item.Object]) == false){
-				currentItem = instance_create_layer(-32, -32, "MenuItems", myItems[# i, Item.Object]);
+				//layer_create(200, "MenuItems");
+				currentItem = instance_create_layer(100, 100, "MenuItems", myItems[# i, Item.Object]);
 				currentItem.price = myItems[# i, Item.Price];
 				currentItem.type = myItems[# i, Item.Type];
 				currentItem.name = myItems[# i, Item.Name];
@@ -63,6 +64,11 @@ if (isShowingMenu) {
 			layer_sequence_play(sequence);
 			showingDescription = false;
 		}
+	}
+	
+	//Ensure only 1 item exists at a time
+	if (instance_number(oItemParent) > 1){
+		instance_destroy(oItemParent);
 	}
 	//draw_rectangle(CameraX() + 196, CameraY() + 43, CameraX() + 200, CameraY() + 48, false);	
 	
