@@ -38,6 +38,18 @@ if (isShowingMenu) {
 			draw_rectangle(itemX - 1, itemY - 1, itemX + 7, itemY + 7, false);
 			draw_set_alpha(1);
 			
+			//Draw item info
+			if(instance_exists(myItems[# i, Item.Object]) == false){
+				currentItem = instance_create_layer(-32, -32, "MenuItems", myItems[# i, Item.Object]);
+				currentItem.price = myItems[# i, Item.Price];
+				currentItem.type = myItems[# i, Item.Type];
+				currentItem.name = myItems[# i, Item.Name];
+				currentItem.isInMenu = true;
+				if(showingDescription) {
+					currentItem.isShowingInfo = true;
+				}
+			}
+			
 			//Clicked on an item
 			if(mouse_check_button_pressed(mb_left) && showingDescription == false) {
 				sequence = layer_sequence_create("Spawns", CameraMiddleX() - 70, CameraMiddleY() + 9, sqDescriptionAnimation);
